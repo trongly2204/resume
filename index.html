@@ -1,109 +1,95 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Trong_Ly_Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>TRONG LY</h1>
-        <h2>COMPUTER SCIENCE</h2>
+        <h1>Trong Ly's Resume</h1>
+        <h2>Computer Science</h2>
     </header>
 
-    <table class="contact-table">
-        <tr>
-            <td><strong>Phone:</strong><br>+720 266 0614</td>
-            <td><strong>Email:</strong><br>tronglyhieu1997@gmail.com</td>
-            <td><strong>Address:</strong><br>858 S Eliot St<br>Denver, CO 80219</td>
-        </tr>
-        <tr>
-            <td><strong>GitHub:</strong><br><a href="https://github.com/trongly2204" target="_blank">github.com/trongly2204</a></td>
-            <td><strong>LinkedIn:</strong><br><a href="https://www.linkedin.com/in/trongly2204" target="_blank">linkedin.com/in/trongly2204</a></td>
-        </tr>
-    </table>
-
-    <div class="resume">
-        <section>
-            <h2>Professional Summary</h2>
-            <p>Dedicated Computer Science graduate with strong problem-solving skills, consistency, and persistence. 
-            Proficient in Python and C++, with experience solving complex algorithmic problems and collaborating effectively 
-            in team-based projects. Known for adaptability and the ability to quickly learn and apply new programming languages 
-            and technologies.</p>
-        </section>
-
-        <section>
-            <h2>Education</h2>
-            <div>
-                <h3>Bachelor of Arts in Computer Science and Engineering | 2022 - 2025</h3>
-                <p>University of Colorado Denver</p>
-                <ul>
-                    <li>Relevant Coursework: Machine Learning, Algorithms, Software Engineering, 
-                        Database Systems, Data Structures, Object-Oriented Programming, Web Development 
-                        with PHP & MySQL
-                    </li>
-                    <li>GPA: 3.5</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>Proficient In: Python, C++</li>
-                <li>Familiar With: C, Docker</li>
-                <li>Web Development: HTML, CSS, PHP, MySQL, Flask</li>
-                <li>Tools: VS Code</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Projects</h2>
-            <div>
-                <h3>Remove Sensitive Information Web App</h3>
-                <p>Machine Learning Class</p>
-                <ul>
-                    <li>Developed a Flask-based web application that uses a custom NER model 
-                        and regular expressions to extract named entities from text. 
-                        Technologies: Python, Flask, Regex.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Smart Doorbell IoT System</h3>
-                <p>IoT Class</p>
-                <ul>
-                    <li>Built an IoT-enabled smart doorbell using Arduino and C++, 
-                        integrated with AWS services for cloud data handling and notifications.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>IoT Security System</h3>
-                <p>Computer Security Class</p>
-                <ul>
-                    <li>Designed a Python-based security monitoring system for IoT devices, 
-                        focusing on detecting anomalies and unauthorized access patterns.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>E-commerce Website</h3>
-                <p>Web and Database Class</p>
-                <ul>
-                    <li>Created a fully functional e-commerce platform using HTML, CSS, SQL, and PHP, 
-                        featuring user authentication, product listings, and order management.</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Predict Age, Gender, Ethnicity Web App</h3>
-                <p>Personal Project</p>
-                <ul>
-                    <li>Developed a web application using DeepFace for real-time prediction of age, 
-                        gender, and ethnicity from user-uploaded images. Built with Flask for the backend, 
-                        integrated a responsive front end using HTML, CSS, and JavaScript.</li>
-                </ul>
-            </div>
-        </section>
+    <div id="profile">
+         <div class="profile-pic-wrapper">
+            <img src="images/profile.jpg" alt="Trong Ly" id="profile-pic">
+        </div>
+        <div id="contact-info">
+            <p><strong>Phone:</strong> +1 (720) 266-0614</p>
+            <p><strong>Email:</strong> <a href="mailto:tronglyhieu1997@gmail.com">tronglyhieu1997@gmail.com</a></p>
+            <p><strong>Address:</strong> 858 S Eliot St, Denver, CO 80219</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/trongly2204" target="_blank" rel="noopener">github.com/trongly2204</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/trongly2204" target="_blank" rel="noopener">linkedin.com/in/trongly2204</a></p>
+        </div>
     </div>
+
+    <div id="main">
+        <div id="menu">
+            <button onclick="showSection('summary')">Professional Summary</button>
+            <button onclick="showSection('education')">Education</button>
+            <button onclick="showSection('skills')">Skills</button>
+            <button onclick="showSection('projects')">Projects</button>
+        </div>
+
+        <div id="content">
+            <form id="summary" class="active">
+                <h1>Professional Summary</h1>
+                <p>Dedicated Computer Science graduate with strong problem-solving skills, 
+                consistency, and persistence. Proficient in Python and C++, with experience
+                solving complex algorithmic problems and collaborating effectively in 
+                team-based projects. Known for adaptability and the ability to quickly learn 
+                and apply new programming languages and technologies.</p>
+            </form>
+
+            <form id="education">
+                <h1>Education</h1>
+                <p>Bachelor of Arts in Computer Science and Engineering | 2022 - 2025</p>
+                <p>University of Colorado Denver</p>
+                <p>Relevant Coursework: Machine Learning, Algorithms, Software Engineering, 
+                Database Systems, Data Structures, Object-Oriented Programming, Web Development with PHP & MySQL</p>
+                <p>GPA: 3.5</p>
+            </form>
+
+            <form id="skills">
+                <h1>Skills</h1>
+                <p>Proficient In: Python, C++</p>
+                <p>Familiar With: C, Docker</p>
+                <p>Web Development: HTML, CSS, PHP, MySQL, Flask</p>
+                <p>Tools: VS Code</p>
+            </form>
+
+            <form id="projects">
+                <h1>Projects</h1>
+                <p><strong>Remove Sensitive Information Web App</strong><br>
+                Machine Learning Class<br>
+                Developed a Flask-based web application that uses a custom NER model and regular expressions to extract named entities from text.<br>
+                <a href="https://github.com/trongly2204/remove-sensitive-documents" target="_blank">View on GitHub</a><br></p>
+
+                <p><strong>Smart Doorbell IoT System</strong><br>
+                IoT Class<br>
+                Built an IoT-enabled smart doorbell using Arduino and C++, integrated with AWS services for cloud data handling and notifications.
+                <br>
+                <a href="https://github.com/trongly2204/smart-doorbell" target="_blank">View on GitHub</a><br></p>
+
+                <p><strong>IoT Security System</strong><br>
+                Computer Security Class<br>
+                Designed a Python-based security monitoring system for IoT devices, focusing on detecting anomalies and unauthorized access patterns with HTML, CSS, JavaScript fronted
+                to test on system.
+                <br><a href="https://github.com/trongly2204/Enhance-IoT-devices" target="_blank">View on GitHub</a><br></p>
+
+                <p><strong>E-commerce Website</strong><br>
+                Web and Database Class<br>
+                Created a fully functional e-commerce platform using HTML, CSS, SQL, and PHP, featuring user authentication, product listings, and order management.
+                <br><a href="https://github.com/trongly2204/E-commerce-store" target="_blank">View on GitHub</a><br></p>
+
+                <p><strong>Predict Age, Gender, Ethnicity Web App</strong><br>
+                Personal Project<br>
+                Developed a web app using DeepFace for real-time prediction of age, gender, and ethnicity. Built with Flask, HTML, CSS, and JavaScript.
+                <br><a href="https://github.com/trongly2204/predict-age-gender-ethnicity" target="_blank">View on GitHub</a><br></p>
+            </form>
+        </div>
+    </div>
+<script src="main.js"></script>
+
 </body>
-</html>
