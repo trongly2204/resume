@@ -7,6 +7,28 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+
+    /* Enable 3D effect */
+    transform-style: preserve-3d;
+    perspective: 1000px;
+
+    /* Animation */
+    animation: zoom3d 2s ease-in-out forwards;
+}
+
+@keyframes zoom3d {
+    0% {
+        transform: perspective(1000px) rotateX(15deg) rotateY(15deg) scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+        opacity: 1;
+    }
 }
 #menu {
     flex-shrink: 0;
@@ -38,7 +60,17 @@ body {
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
     box-sizing: border-box;
     color: white; /* Optional: sets default text color */
-
+    animation-duration: 2s;
+    animation-name: spin;
+    animation-timing-function: ease-in-out;
+}
+@keyframes spin{
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 #content form.active {
     display: block;
