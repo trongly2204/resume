@@ -49,28 +49,31 @@ body {
     font-size: 16px;
     box-sizing: border-box;
 }
+
 #menu button:hover {
+    display: block;
+    filter: drop-shadow(0 0 10px #000000);
     transform: scale(1.05);
-    background-color: #e6e6e6;
 }
 #content form {
     display: none;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease, transform 0.6s ease;
     padding-left: 30px;
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    background-color: rgba(0, 0, 0, 0.7);
     box-sizing: border-box;
-    color: white; /* Optional: sets default text color */
-    animation-duration: 2s;
-    animation-name: spin;
-    animation-timing-function: ease-in-out;
+    color: white;
+    position: absolute;
+    width: 100%;
 }
-@keyframes spin{
-    50%{
-        transform: scale(0.5);
-    }
-    100%{
-        transform: scale(1);
-    }
+
+#content form.active {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
 }
 #content form.active {
     display: block;
@@ -169,4 +172,58 @@ a:hover {
 
 #contact-info a:hover {
     text-decoration: underline;
+}
+
+
+#spaceship-wrapper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* Shared styles */
+#spaceship,
+#spaceship1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: opacity 0.3s ease;
+}
+
+/* Default images */
+#spaceship {
+    background-image: url('images/spaceship.png');
+    opacity: 1;
+    z-index: 1;
+}
+
+#spaceship1 {
+    background-image: url('images/spaceship1.png');
+    opacity: 0;
+    z-index: 2;
+}
+
+/* On hover: hide spaceship, show spaceship1 */
+#spaceship-wrapper:hover #spaceship {
+    opacity: 0;
+}
+
+#spaceship-wrapper:hover #spaceship1 {
+    opacity: 1;
+    animation: float 1s infinite alternate ease-in-out; /* Apply animation on hover */
+}
+
+/* Float animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
 }
