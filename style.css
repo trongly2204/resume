@@ -145,11 +145,11 @@ a:hover {
 /* Profile Section */
 #profile {
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 1.25rem;
     padding: 1.25rem 2rem;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
 }
 
 .profile-pic-wrapper {
@@ -189,52 +189,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Spaceship Animation */
-#spaceship-wrapper {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin-left: auto;
-    cursor: pointer;
-}
-
-#spaceship,
-#spaceship1 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: opacity 0.3s ease;
-}
-
-#spaceship {
-    background-image: url('images/spaceship.png');
-    opacity: 1;
-    z-index: 1;
-}
-
-#spaceship1 {
-    background-image: url('images/spaceship1.png');
-    opacity: 0;
-    z-index: 2;
-}
-
-#spaceship-wrapper:hover #spaceship {
-    opacity: 0;
-}
-
-#spaceship-wrapper:hover #spaceship1 {
-    opacity: 1;
-    animation: float 1s infinite alternate ease-in-out;
-}
-
-/* Float animation */
-@keyframes float {
-    0% { transform: translateY(0px); }
-    100% { transform: translateY(-40px); }
-}
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
@@ -269,3 +223,4 @@ a:hover {
         font-size: 1.75rem;
     }
 }
+
