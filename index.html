@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trong Ly — Full Stack Software Engineer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="particles" id="particles"></div>
+
+<header>
+    <h1 class="typewriter" id="header-name">Trong Ly</h1>
+    <h2>Full Stack Software Engineer</h2>
+</header>
+
+<div id="profile">
+    <div class="profile-pic-wrapper">
+        <img src="images/profile.jpg" alt="Trong Ly" id="profile-pic">
+    </div>
+    <div id="contact-info">
+        <p><span class="contact-icon">📞</span><strong>Phone:</strong> +1 (720) 266-0614</p>
+        <p><span class="contact-icon">✉️</span><strong>Email:</strong> <a href="mailto:tronglyhieu1997@gmail.com">tronglyhieu1997@gmail.com</a></p>
+        <p><span class="contact-icon">📍</span><strong>Address:</strong> 858 S Eliot St, Denver, CO 80219</p>
+        <p><span class="contact-icon">💻</span><strong>GitHub:</strong> <a href="https://github.com/trongly2204" target="_blank" rel="noopener">github.com/trongly2204</a></p>
+        <p><span class="contact-icon">🔗</span><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/trongly2204" target="_blank" rel="noopener">linkedin.com/in/trongly2204</a></p>
+        <p><span class="contact-icon">🌐</span><strong>Website:</strong> <a href="https://trongly2204.github.io/resume/" target="_blank" rel="noopener">trongly2204.github.io/resume</a></p>
+    </div>
+</div>
+
+<div id="main">
+    <div id="menu">
+        <button class="menu-btn active-btn" onclick="showSection('summary', this)">
+            <span class="btn-icon">👤</span> Professional Summary
+        </button>
+        <button class="menu-btn" onclick="showSection('education', this)">
+            <span class="btn-icon">🎓</span> Education
+        </button>
+        <button class="menu-btn" onclick="showSection('skills', this)">
+            <span class="btn-icon">⚡</span> Skills
+        </button>
+        <button class="menu-btn" onclick="showSection('projects', this)">
+            <span class="btn-icon">🚀</span> Projects
+        </button>
+    </div>
+
+    <div id="content">
+
+        <!-- SUMMARY -->
+        <section id="summary" class="section active">
+            <h1>Professional Summary</h1>
+            <p class="summary-text">
+                Dedicated Computer Science graduate with hands-on experience building full-stack web applications,
+                machine learning models, and IoT embedded systems. Proficient in Python and C++, with practical
+                experience developing scalable applications, deploying cloud-based systems using AWS EC2, and
+                designing RESTful APIs. Experienced in building real-world projects including e-commerce platforms,
+                AI-powered applications, and embedded systems integrated with cloud services. Known for strong
+                problem-solving skills, persistence, and the ability to quickly learn and apply new technologies.
+            </p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education" class="section">
+            <h1>Education</h1>
+            <div class="edu-card">
+                <div class="edu-header">
+                    <div>
+                        <h3>Bachelor of Arts in Computer Science and Engineering</h3>
+                        <p class="edu-school">University of Colorado Denver</p>
+                    </div>
+                    <span class="edu-years">2022 – 2025</span>
+                </div>
+                <div class="edu-gpa">GPA: <strong>3.5</strong></div>
+                <div class="coursework-label">Relevant Coursework</div>
+                <div class="tag-group">
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Software Engineering</span>
+                    <span class="tag">Database Systems</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">Object-Oriented Programming</span>
+                    <span class="tag">Web Development with PHP &amp; MySQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h1>Skills</h1>
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">Programming Languages</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>Python</span><span class="skill-level">Advanced</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>C++</span><span class="skill-level">Intermediate</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-label"><span>C</span><span class="skill-level">Familiar</span></div>
+                        <div class="skill-bar-track"><div class="skill-bar-fill" data-width="40"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">Web Development</h3>
+                <div class="tag-group">
+                    <span class="tag tag-web">HTML5</span>
+                    <span class="tag tag-web">CSS3</span>
+                    <span class="tag tag-web">JavaScript (ES6+)</span>
+                    <span class="tag tag-web">TypeScript</span>
+                    <span class="tag tag-web">React</span>
+                    <span class="tag tag-web">PHP</span>
+                    <span class="tag tag-web">Django</span>
+                    <span class="tag tag-web">Flask</span>
+                    <span class="tag tag-web">MySQL</span>
+                    <span class="tag tag-web">Bootstrap</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">Frameworks &amp; Libraries</h3>
+                <div class="tag-group">
+                    <span class="tag tag-lib">Pandas</span>
+                    <span class="tag tag-lib">NumPy</span>
+                    <span class="tag tag-lib">TensorFlow</span>
+                    <span class="tag tag-lib">scikit-learn</span>
+                    <span class="tag tag-lib">OpenCV</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">Developer Tools</h3>
+                <div class="tag-group">
+                    <span class="tag tag-tool">Git</span>
+                    <span class="tag tag-tool">GitHub</span>
+                    <span class="tag tag-tool">Docker</span>
+                    <span class="tag tag-tool">Linux</span>
+                    <span class="tag tag-tool">VS Code</span>
+                    <span class="tag tag-tool">AWS EC2</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="skill-cat-title">Other Skills</h3>
+                <div class="tag-group">
+                    <span class="tag tag-other">RESTful API Development</span>
+                    <span class="tag tag-other">Object-Oriented Programming</span>
+                    <span class="tag tag-other">Agile Development</span>
+                    <span class="tag tag-other">Database Design</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h1>Projects</h1>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Named Entity Recognition Web App</h3>
+                    <span class="project-context">Machine Learning Class</span>
+                </div>
+                <p>Developed a Flask-based web application that extracts named entities from text using a custom NER model and regular expressions.</p>
+                <div class="tag-group">
+                    <span class="tag tag-tech">Python</span>
+                    <span class="tag tag-tech">Flask</span>
+                    <span class="tag tag-tech">Regex</span>
+                </div>
+                <a class="project-link" href="https://github.com/trongly2204/remove-sensitive-documents" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Smart Doorbell IoT System</h3>
+                    <span class="project-context">IoT Class</span>
+                </div>
+                <p>Built an Arduino-based smart doorbell using C++, integrated with AWS for cloud data processing and real-time notifications.</p>
+                <div class="tag-group">
+                    <span class="tag tag-tech">Arduino</span>
+                    <span class="tag tag-tech">C++</span>
+                    <span class="tag tag-tech">AWS</span>
+                </div>
+                <a class="project-link" href="https://github.com/trongly2204/smart-doorbell" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Fitness &amp; Calorie Tracker App</h3>
+                    <span class="project-context">Personal Project</span>
+                </div>
+                <p>Created a full-stack application to track calorie intake and fitness goals, with personalized recommendations based on user data.</p>
+                <div class="tag-group">
+                    <span class="tag tag-tech">Django</span>
+                    <span class="tag tag-tech">Python</span>
+                    <span class="tag tag-tech">HTML</span>
+                    <span class="tag tag-tech">CSS</span>
+                    <span class="tag tag-tech">JavaScript</span>
+                    <span class="tag tag-tech">Bootstrap</span>
+                </div>
+                <a class="project-link" href="https://myfitnessandhealth.onrender.com" target="_blank" rel="noopener">Live Demo →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>E-Commerce Web Application</h3>
+                    <span class="project-context">Web and Database Class</span>
+                </div>
+                <p>Developed a full-featured e-commerce platform with authentication, product management, shopping cart, and order processing.</p>
+                <div class="tag-group">
+                    <span class="tag tag-tech">Django</span>
+                    <span class="tag tag-tech">MySQL</span>
+                    <span class="tag tag-tech">HTML</span>
+                    <span class="tag tag-tech">CSS</span>
+                    <span class="tag tag-tech">PHP</span>
+                </div>
+                <a class="project-link" href="https://github.com/trongly2204/E-commerce-store" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Age, Gender &amp; Ethnicity Prediction App</h3>
+                    <span class="project-context">Personal Project</span>
+                </div>
+                <p>Built a web application using DeepFace to predict demographic attributes from uploaded images in real time.</p>
+                <div class="tag-group">
+                    <span class="tag tag-tech">Python</span>
+                    <span class="tag tag-tech">Flask</span>
+                    <span class="tag tag-tech">HTML</span>
+                    <span class="tag tag-tech">CSS</span>
+                    <span class="tag tag-tech">JavaScript</span>
+                </div>
+                <a class="project-link" href="https://github.com/trongly2204/predict-age-gender-ethnicity" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Fraud Detection Application</h3>
+                    <span class="project-context">Personal Project</span>
+                </div>
+                <p>Developed a machine learning-based fraud detection system with a web interface for analyzing transactions. Dashboard classifies transactions as fraudulent or legitimate in real time.</p>
+                <div class="tag-group">
+                    <span class="tag tag-tech">Python</span>
+                    <span class="tag tag-tech">TypeScript</span>
+                    <span class="tag tag-tech">React</span>
+                    <span class="tag tag-tech">Flask</span>
+                    <span class="tag tag-tech">SQL</span>
+                </div>
+                <a class="project-link" href="https://github.com/trongly2204/detect_fraud" target="_blank" rel="noopener">View on GitHub →</a>
+            </div>
+
+        </section>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
